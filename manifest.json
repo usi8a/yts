@@ -1,0 +1,33 @@
+{
+  "id": "org.yts.stremio",
+  "version": "1.0.0",
+  "name": "YTS Movies",
+  "description": "Stream YTS (YIFY) movies in Stremio",
+  "logo": "https://yts.mx/assets/website/logo-YTS.svg",
+  "resources": [
+    "catalog",
+    {
+      "name": "stream",
+      "types": ["movie"],
+      "idPrefixes": ["tt", "yt"]
+    }
+  ],
+  "types": ["movie"],
+  "catalogs": [
+    {
+      "type": "movie",
+      "id": "yts_top",
+      "name": "YTS Top",
+      "extra": [
+        {
+          "name": "genre",
+          "isRequired": false
+        },
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}
