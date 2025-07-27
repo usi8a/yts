@@ -1,33 +1,21 @@
 {
-  "id": "org.yts.stremio",
+  "id": "com.faselhd.stremio",
   "version": "1.0.0",
-  "name": "YTS Movies",
-  "description": "Stream YTS (YIFY) movies in Stremio",
-  "logo": "https://yts.mx/assets/website/logo-YTS.svg",
-  "resources": [
-    "catalog",
-    {
-      "name": "stream",
-      "types": ["movie"],
-      "idPrefixes": ["tt", "yt"]
-    }
-  ],
-  "types": ["movie"],
+  "name": "FaselHD Arabic",
+  "description": "أدون لمشاهدة الأفلام والمسلسلات العربية من موقع فاصل إعلاني",
+  "logo": "https://faselhd.cloud/wp-content/uploads/2022/11/cropped-cropped-icon-03-32x32.png",
+  "resources": ["catalog", "stream"],
+  "types": ["movie", "series"],
   "catalogs": [
     {
       "type": "movie",
-      "id": "yts_top",
-      "name": "YTS Top",
-      "extra": [
-        {
-          "name": "genre",
-          "isRequired": false
-        },
-        {
-          "name": "search",
-          "isRequired": false
-        }
-      ]
+      "id": "faselhd_movies",
+      "name": "أفلام FaselHD"
+    },
+    {
+      "type": "series",
+      "id": "faselhd_series",
+      "name": "مسلسلات FaselHD"
     }
   ]
 }
